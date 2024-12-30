@@ -1,0 +1,33 @@
+@use "../helpers" as *;
+
+.splide {
+  @include mobile-s-above {
+    &__track {
+      padding-block: rem(40);
+    }
+
+    &__pagination {
+      &__page {
+        background: black !important;
+      }
+    }
+
+    &__list {
+      align-items: center;
+    }
+
+    &__slide {
+      img {
+        width: 100%;
+        height: auto;
+        transition-duration: 0.6s;
+      }
+
+      &.is-active {
+        img {
+          scale: 1.2;
+        }
+      }
+    }
+  }
+}

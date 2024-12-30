@@ -1,0 +1,7 @@
+@use "../helpers" as *;
+
+.scroll {
+  background-color: var(--color-light);
+  box-shadow: 0px 4px 12px 0px rgba(66, 68, 90, 0.5);
+  color: var(--color-dark);
+}

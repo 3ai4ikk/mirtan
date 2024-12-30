@@ -1,0 +1,11 @@
+@use "../helpers" as *;
+
+.info {
+  background-color: #f6f1f1;
+  color: var(--color-dark);
+  text-align: center;
+
+  &__title {
+    margin-bottom: rem(20);
+  }
+}
