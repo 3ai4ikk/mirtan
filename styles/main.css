@@ -331,7 +331,7 @@ a[class] {
 
 .hero {
   height: 100vh;
-  background: url("./images/bg-1.jpg") center/cover no-repeat;
+  background: url(../images/bg-1.jpg) center/cover no-repeat;
   animation: animation-swap 15s infinite;
   position: relative;
 }
@@ -360,13 +360,13 @@ a[class] {
 }
 @keyframes animation-swap {
   0% {
-    background-image: url("./images/bg-1.jpg");
+    background-image: url(../images/bg-1.jpg);
   }
   33% {
-    background-image: url("./images/bg-2.jpg");
+    background-image: url(../images/bg-2.jpg);
   }
   66% {
-    background-image: url("./images/bg-3.jpg");
+    background-image: url(../images/bg-3.jpg);
   }
 }
 
@@ -386,7 +386,8 @@ a[class] {
   height: 0.125rem;
   background-color: var(--color-light);
 }
-.burger-button span::after, .burger-button span::before {
+.burger-button span::after,
+.burger-button span::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -468,7 +469,8 @@ a[class] {
 .header__inner.scroll .burger-button span {
   background-color: var(--color-dark);
 }
-.header__inner.scroll .burger-button span::after, .header__inner.scroll .burger-button span::before {
+.header__inner.scroll .burger-button span::after,
+.header__inner.scroll .burger-button span::before {
   background-color: var(--color-dark);
 }
 .header__body {
@@ -739,4 +741,4 @@ a[class] {
   .products__card-body:active {
     opacity: 1;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
