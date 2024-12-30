@@ -175,28 +175,28 @@ svg * {
 }
 @font-face {
   font-family: "Roboto";
-  src: url("./fonts/Roboto-Regular.woff2") format(woff2);
+  src: url(../fonts/Roboto-Regular.woff2) format(woff2);
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("./fonts/Roboto-Bold.woff2") format(woff2);
+  src: url(../fonts/Roboto-Bold.woff2) format(woff2);
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Assistant";
-  src: url("./fonts/Assistant-Regular.woff2") format(woff2);
+  src: url(../fonts/Assistant-Regular.woff2) format(woff2);
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Assistant";
-  src: url("./fonts/Assistant-Bold.woff2") format(woff2);
+  src: url(../fonts/Assistant-Bold.woff2) format(woff2);
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -386,8 +386,7 @@ a[class] {
   height: 0.125rem;
   background-color: var(--color-light);
 }
-.burger-button span::after,
-.burger-button span::before {
+.burger-button span::after, .burger-button span::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -469,8 +468,7 @@ a[class] {
 .header__inner.scroll .burger-button span {
   background-color: var(--color-dark);
 }
-.header__inner.scroll .burger-button span::after,
-.header__inner.scroll .burger-button span::before {
+.header__inner.scroll .burger-button span::after, .header__inner.scroll .burger-button span::before {
   background-color: var(--color-dark);
 }
 .header__body {
@@ -741,4 +739,4 @@ a[class] {
   .products__card-body:active {
     opacity: 1;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
