@@ -3,6 +3,17 @@
 .header {
   position: relative;
   z-index: 5;
+
+  &__logo {
+    &-link {
+      svg {
+        @include mobile {
+          width: rem(120);
+        }
+      }
+    }
+  }
+
   &__inner {
     position: fixed;
     top: 0;
