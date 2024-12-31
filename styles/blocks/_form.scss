@@ -11,7 +11,7 @@
     border: none;
     outline: none;
     color: var(--color-light);
-    border-bottom: rem(1) solid #790d0d;
+    border-bottom: rem(1) solid var(--color-light);
     padding-left: rem(10);
 
     &::placeholder {

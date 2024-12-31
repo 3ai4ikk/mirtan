@@ -840,7 +840,7 @@ a[class] {
   border: none;
   outline: none;
   color: var(--color-light);
-  border-bottom: 0.0625rem solid #790d0d;
+  border-bottom: 0.0625rem solid var(--color-light);
   padding-left: 0.625rem;
 }
 .form__input::placeholder, .form__text-area::placeholder {
