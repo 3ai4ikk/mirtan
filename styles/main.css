@@ -820,11 +820,6 @@ a[class] {
   row-gap: 0.625rem;
   font-weight: 700;
 }
-@media (width <= 63.99875rem) {
-  .footer__contacts-body {
-    align-items: center;
-  }
-}
 .footer__contacts-body * {
   display: flex;
   align-items: center;

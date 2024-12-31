@@ -61,10 +61,6 @@
       row-gap: rem(10);
       font-weight: 700;
 
-      @include tablet {
-        align-items: center;
-      }
-
       * {
         display: flex;
         align-items: center;
