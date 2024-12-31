@@ -86,6 +86,8 @@
       opacity: 0;
       row-gap: rem(10);
 
+      transition-duration: var(--transition-duration);
+
       @include tablet {
         position: static;
         translate: 0;

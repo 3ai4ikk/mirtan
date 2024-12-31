@@ -1,0 +1,82 @@
+@use "../helpers" as *;
+
+.footer {
+  background-color: #4d0909;
+
+  &__inner {
+    @include fluid-text(16, 14);
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      row-gap: rem(40);
+    }
+  }
+
+  &__logo {
+    margin-right: rem(40);
+    @include tablet {
+      margin-right: 0;
+    }
+    &-link {
+      @include hover {
+        color: rgba($color: #ffffff, $alpha: 0.5);
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(20);
+  }
+
+  &__products {
+    &-body {
+      color: rgba($color: #ffffff, $alpha: 0.8);
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      column-gap: rem(5);
+      &::before {
+        @include square(rem(8));
+        content: "";
+        border-radius: 50%;
+        background-color: #fff;
+      }
+
+      @include hover {
+        translate: 5px;
+      }
+    }
+  }
+
+  &__contacts {
+    &-body {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(10);
+      font-weight: 700;
+
+      @include tablet {
+        align-items: center;
+      }
+
+      * {
+        display: flex;
+        align-items: center;
+        column-gap: rem(5);
+      }
+    }
+  }
+
+  &__form {
+    &-body {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
