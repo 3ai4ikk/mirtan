@@ -853,4 +853,26 @@ a[class] {
 }
 .form__button {
   color: var(--color-dark);
+}
+
+.location__inner {
+  display: flex;
+  justify-content: space-around;
+}
+.location__body {
+  color: var(--color-dark);
+}
+.location__title {
+  margin-bottom: 0.625rem;
+  text-align: center;
+}
+.location__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.625rem;
+  align-items: center;
+}
+.location__image {
+  max-width: 25rem;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
