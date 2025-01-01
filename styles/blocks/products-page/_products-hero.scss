@@ -36,6 +36,8 @@
     &-img {
       padding: rem(15);
       margin-bottom: rem(25);
+
+      transition-duration: var(--transition-duration);
       @include hover {
         scale: 1.2;
       }

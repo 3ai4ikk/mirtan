@@ -931,6 +931,7 @@ a[class] {
 .products-hero__card-img {
   padding: 0.9375rem;
   margin-bottom: 1.5625rem;
+  transition-duration: var(--transition-duration);
 }
 @media (any-hover: hover) {
   .products-hero__card-img:hover {
