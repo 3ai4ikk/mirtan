@@ -1,0 +1,48 @@
+@use "../../helpers" as *;
+
+.products-hero {
+  color: var(--color-dark);
+  margin-top: var(--header-height);
+
+  &__title {
+    text-align: center;
+    margin-bottom: rem(30);
+  }
+
+  &__items {
+    --rows: 3;
+    display: grid;
+    grid-template-columns: repeat(var(--rows), 1fr);
+    gap: rem(20);
+
+    @include tablet {
+      --rows: 2;
+    }
+
+    @include mobile {
+      --rows: 1;
+    }
+  }
+
+  &__card {
+    box-shadow: 3px 3px 12px 0px rgb(66, 68, 90);
+    border-radius: rem(10);
+
+    padding: rem(10);
+
+    overflow: hidden;
+    text-align: center;
+
+    &-img {
+      padding: rem(15);
+      margin-bottom: rem(25);
+      @include hover {
+        scale: 1.2;
+      }
+    }
+
+    &-link {
+      display: block;
+    }
+  }
+}

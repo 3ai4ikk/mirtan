@@ -6,9 +6,404 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <title>mirtan | Услуги</title>
+    <title>Mirtan | Услуги</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="./scripts/Header-start.js" type="module" defer></script>
   </head>
   <body>
-    Products
+    <header class="header header--bg-dark-red" data-js-header>
+      <div class="header__inner">
+        <div class="header__body container">
+          <a href="#" class="header__logo-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="200"
+              height="60"
+              viewBox="0 0 2628 671"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    font-size: 200px;
+                    font-family: "Minion Variable Concept";
+                    font-weight: 700;
+                    fill: currentColor;
+                  }
+
+                  .cls-2 {
+                    fill: var(--color-red);
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <text
+                id="mırtan"
+                class="cls-1"
+                transform="translate(5.275 616.276) scale(4.423)"
+              >
+                mırtan
+              </text>
+              <path
+                id="Фигура_1"
+                data-name="Фигура 1"
+                class="cls-2"
+                d="M854,27c-22.022,1.55-41.266,9.569-55,23-8.83,8.636-18.072,22.047-23,44-5.065,22.562-2.3,41.333,4,56,8.5,19.79,24.016,34.411,41,43a90.181,90.181,0,0,0,79,1,82.258,82.258,0,0,0,33-28c6.207-9.258,14.353-30.158,13-58-1.126-23.169-9.042-42.1-14-49C909.478,27.639,870.534,25.837,854,27Z"
+              />
+            </svg>
+          </a>
+          <nav class="header__navigation hidden-mobile">
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item">
+                <a href="./index.html" class="header__navigation-link"
+                  >Главная</a
+                >
+              </li>
+              <li class="header__navigation-item">
+                <a
+                  href="./products.html"
+                  class="header__navigation-link is-active"
+                  >Услуги</a
+                >
+              </li>
+              <li class="header__navigation-item">
+                <a href="#" class="header__navigation-link">О нас</a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="#" class="header__navigation-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="/" class="burger-button visible-mobile" data-js-burger-button
+            ><span></span
+          ></a>
+        </div>
+        <div class="header__overlay" data-js-header-overlay>
+          <a
+            href="/"
+            class="header__overlay-close-button"
+            data-js-header-overlay-close-button
+            ><span></span
+          ></a>
+          <img
+            src="./icons/mirtan.svg"
+            alt=""
+            class="header__overlay-logo"
+            width="130"
+            height="25"
+            loading="lazy"
+          />
+          <nav class="header__overlay-nav">
+            <ul class="header__overlay-list">
+              <li class="header__navigation-item">
+                <a href="./index.html" class="header__navigation-link"
+                  >Главная</a
+                >
+              </li>
+              <li class="header__navigation-item">
+                <a
+                  href="./products.html"
+                  class="header__navigation-link is-active"
+                  >Услуги</a
+                >
+              </li>
+              <li class="header__navigation-item">
+                <a href="#" class="header__navigation-link">О нас</a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="#" class="header__navigation-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="products-hero section">
+        <div class="products-hero__inner container">
+          <h1 class="products-hero__title">Наши товары</h1>
+          <div class="products-hero__items">
+            <div class="products-hero__card">
+              <a href="#" class="products-hero__card-link"
+                ><img
+                  src="./images/products/1.jpg"
+                  alt=""
+                  class="products-hero__card-img"
+                />
+                <p class="products-hero__card-title h4">Выбой</p>
+              </a>
+            </div>
+            <div class="products-hero__card">
+              <a href="#" class="products-hero__card-link"
+                ><img
+                  src="./images/products/2.jpg"
+                  alt=""
+                  class="products-hero__card-img"
+                />
+                <p class="products-hero__card-title h4">Вымольная машина</p>
+              </a>
+            </div>
+            <div class="products-hero__card">
+              <a href="#" class="products-hero__card-link">
+                <img
+                  src="./images/products/3.jpg"
+                  alt=""
+                  class="products-hero__card-img"
+                />
+                <p class="products-hero__card-title h4">Жерновая мельница</p>
+              </a>
+            </div>
+            <div class="products-hero__card">
+              <a href="#" class="products-hero__card-link">
+                <img
+                  src="./images/products/4.jpg"
+                  alt=""
+                  class="products-hero__card-img"
+                />
+                <p class="products-hero__card-title h4">Зерновой сепаратор</p>
+              </a>
+            </div>
+            <div class="products-hero__card">
+              <a href="#" class="products-hero__card-link">
+                <img
+                  src="./images/products/5.jpg"
+                  alt=""
+                  class="products-hero__card-img"
+                />
+                <p class="products-hero__card-title h4">Камнеотборник</p>
+              </a>
+            </div>
+            <div class="products-hero__card">
+              <a href="#" class="products-hero__card-link">
+                <img
+                  src="./images/products/6.jpg"
+                  alt=""
+                  class="products-hero__card-img"
+                />
+                <p class="products-hero__card-title h4">Мельница</p>
+              </a>
+            </div>
+            <div class="products-hero__card">
+              <a href="#" class="products-hero__card-link"
+                ><img
+                  src="./images/products/7.jpg"
+                  alt=""
+                  class="products-hero__card-img"
+                />
+                <p class="products-hero__card-title h4">Обойка</p>
+              </a>
+            </div>
+            <div class="products-hero__card">
+              <a href="#" class="products-hero__card-link"
+                ><img
+                  src="./images/products/8.jpg"
+                  alt=""
+                  class="products-hero__card-img"
+                />
+                <p class="products-hero__card-title h4">
+                  Пневматический сепаратор
+                </p>
+              </a>
+            </div>
+            <div class="products-hero__card">
+              <a href="#" class="products-hero__card-link">
+                <img
+                  src="./images/products/9.jpg"
+                  alt=""
+                  class="products-hero__card-img"
+                />
+                <p class="products-hero__card-title h4">Рассев</p>
+              </a>
+            </div>
+            <div class="products-hero__card">
+              <a href="#" class="products-hero__card-link">
+                <img
+                  src="./images/products/10.jpg"
+                  alt=""
+                  class="products-hero__card-img"
+                />
+                <p class="products-hero__card-title h4">Ситовейка</p>
+              </a>
+            </div>
+            <div class="products-hero__card">
+              <a href="#" class="products-hero__card-link">
+                <img
+                  src="./images/products/11.jpg"
+                  alt=""
+                  class="products-hero__card-img"
+                />
+                <p class="products-hero__card-title h4">Станок</p>
+              </a>
+            </div>
+            <div class="products-hero__card">
+              <a href="#" class="products-hero__card-link">
+                <img
+                  src="./images/products/12.jpg"
+                  alt=""
+                  class="products-hero__card-img"
+                />
+                <p class="products-hero__card-title h4">
+                  Щеточно-обоечная машина
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section">
+      <div class="footer__inner container">
+        <div class="footer__logo">
+          <a href="#" class="footer__logo-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="200"
+              height="60"
+              viewBox="0 0 2628 671"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    font-size: 200px;
+                    font-family: "Minion Variable Concept";
+                    font-weight: 700;
+                    fill: currentColor;
+                  }
+
+                  .cls-2 {
+                    fill: var(--color-red);
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <text
+                id="mırtan"
+                class="cls-1"
+                transform="translate(5.275 616.276) scale(4.423)"
+              >
+                mırtan
+              </text>
+              <path
+                id="Фигура_1"
+                data-name="Фигура 1"
+                class="cls-2"
+                d="M854,27c-22.022,1.55-41.266,9.569-55,23-8.83,8.636-18.072,22.047-23,44-5.065,22.562-2.3,41.333,4,56,8.5,19.79,24.016,34.411,41,43a90.181,90.181,0,0,0,79,1,82.258,82.258,0,0,0,33-28c6.207-9.258,14.353-30.158,13-58-1.126-23.169-9.042-42.1-14-49C909.478,27.639,870.534,25.837,854,27Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="footer__products">
+          <h4 class="footer__title">Наша продукция</h4>
+          <div class="footer__products-body">
+            <ul class="footer__products-list">
+              <li class="footer__products-item">
+                <a href="#" class="footer__products-link">Выбой</a>
+              </li>
+              <li class="footer__products-item">
+                <a href="#" class="footer__products-link">Вымольная машина</a>
+              </li>
+              <li class="footer__products-item">
+                <a href="#" class="footer__products-link">Жерновая мельница</a>
+              </li>
+              <li class="footer__products-item">
+                <a href="#" class="footer__products-link">Зерновой сепаратор</a>
+              </li>
+              <li class="footer__products-item">
+                <a href="#" class="footer__products-link">Камнеотборник</a>
+              </li>
+              <li class="footer__products-item">
+                <a href="#" class="footer__products-link">Мельница</a>
+              </li>
+              <li class="footer__products-item">
+                <a href="#" class="footer__products-link">Обойка</a>
+              </li>
+              <li class="footer__products-item">
+                <a href="#" class="footer__products-link"
+                  >Пневматический сепаратор</a
+                >
+              </li>
+              <li class="footer__products-item">
+                <a href="#" class="footer__products-link">Рассев</a>
+              </li>
+              <li class="footer__products-item">
+                <a href="#" class="footer__products-link">Ситовейка</a>
+              </li>
+              <li class="footer__products-item">
+                <a href="#" class="footer__products-link">Станок</a>
+              </li>
+              <li class="footer__products-item">
+                <a href="#" class="footer__products-link"
+                  >Щеточно-обоечная машина</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <h4 class="footer__title">Наши контакты</h4>
+          <div class="footer__contacts-body">
+            <div class="footer__contacts-adress">
+              <img
+                class="footer__contacts-img"
+                src="./icons/footer/contacts/1.svg"
+                alt=""
+                width="32"
+                height="32"
+                loading="lazy"
+              />
+              <address>
+                Barbaros, Hadrian Kale Kapısı, 07100 <br />
+                Muratpaşa/Antalya, Турция
+              </address>
+            </div>
+            <div class="footer__contacts-tel">
+              <img
+                class="footer__contacts-img"
+                src="./icons/footer/contacts/2.svg"
+                alt=""
+                width="32"
+                height="32"
+                loading="lazy"
+              />
+              <a class="footer__contacts-tel-link" href="tel:+901234567890"
+                >+90 123-456-78-90</a
+              >
+            </div>
+            <div class="footer__contacts-email">
+              <img
+                class="footer__contacts-img"
+                src="./icons/footer/contacts/3.svg"
+                alt=""
+                width="32"
+                height="32"
+                loading="lazy"
+              />
+              <a
+                href="mailto:mirtan@gmail.com"
+                class="footer__contacts-email-link"
+                >mirtan@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer__form">
+          <h4 class="footer__title">Напишите нам</h4>
+          <form class="footer__form-body form">
+            <input type="text" class="form__input" placeholder="Имя" required />
+            <input
+              type="email"
+              class="form__input"
+              placeholder="E-mail"
+              required
+            />
+            <textarea
+              class="form__text-area"
+              placeholder="Тело письма"
+              required
+            ></textarea>
+            <button class="form__button button">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

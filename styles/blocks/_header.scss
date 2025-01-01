@@ -1,12 +1,56 @@
 @use "../helpers" as *;
 
 .header {
-  position: relative;
-  z-index: 5;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+  &--bg-black {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+  }
+
+  &--bg-dark-red {
+    background-color: var(--color-dark-red);
+    color: var(--color-light);
+  }
+
+  &.scroll {
+    background-color: var(--color-light);
+    box-shadow: 0px 4px 12px 0px rgba(66, 68, 90, 0.5);
+    color: var(--color-dark);
+
+    svg {
+      color: var(--color-dark);
+
+      @include hover {
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    .burger-button {
+      span {
+        background-color: var(--color-dark);
+        &::after,
+        &::before {
+          background-color: var(--color-dark);
+        }
+      }
+    }
+  }
 
   &__logo {
     &-link {
       svg {
+        color: var(--color-light);
+
+        @include hover {
+          color: rgba(255, 255, 255, 0.6);
+        }
+
         @include mobile {
           width: rem(120);
         }
@@ -15,62 +59,7 @@
   }
 
   &__inner {
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-
     padding-block: rem(10);
-
-    transition: background-color 0.3s, box-shadow 0.3s;
-
-    &:not(:has(.scroll)) {
-      svg {
-        .cls-1 {
-          color: #fff;
-        }
-
-        .cls-2 {
-          color: var(--color-red);
-        }
-
-        @include hover {
-          .cls-1 {
-            color: rgb(255, 255, 255, 0.5);
-          }
-          &:not(:has(.scroll)).cls-2 {
-            color: #fff;
-          }
-        }
-      }
-    }
-
-    &.scroll {
-      svg {
-        .cls-1 {
-          color: var(--color-dark);
-        }
-        @include hover {
-          .cls-1 {
-            color: rgb(0, 0, 0, 0.5);
-          }
-        }
-      }
-
-      .burger-button {
-        @include hover {
-          border: rem(1) solid var(--color-dark);
-          border-radius: rem(10);
-        }
-        span {
-          background-color: var(--color-dark);
-          &::after,
-          &::before {
-            background-color: var(--color-dark);
-          }
-        }
-      }
-    }
   }
 
   &__body {
@@ -82,6 +71,7 @@
   &__navigation {
     &-list {
       display: flex;
+      column-gap: rem(10);
     }
 
     &-link {

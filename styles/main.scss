@@ -6,7 +6,6 @@
 
 @use "blocks/hero";
 @use "blocks/burger-button";
-@use "blocks/scroll";
 @use "blocks/header";
 @use "blocks/info";
 @use "libs/splide";
@@ -15,3 +14,5 @@
 @use "blocks/footer";
 @use "blocks/form";
 @use "blocks/location";
+
+@use "blocks/products-page/products-hero";

@@ -209,6 +209,7 @@ svg * {
   --container-width: 80rem;
   --container-padding-x: 0.9375rem;
   --section-padding-y: 3.75rem;
+  --header-height: 5rem;
   --font-family-base: "Roboto", sans-serif;
   --font-family-secondary: "Assistant", sans-serif;
   --transition-duration: 0.2s;
@@ -412,15 +413,57 @@ a[class] {
   bottom: -0.3125rem;
 }
 
-.scroll {
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.header--bg-black {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+.header--bg-dark-red {
+  background-color: var(--color-dark-red);
+  color: var(--color-light);
+}
+.header.scroll {
   background-color: var(--color-light);
   box-shadow: 0px 4px 12px 0px rgba(66, 68, 90, 0.5);
   color: var(--color-dark);
 }
-
-.header {
-  position: relative;
-  z-index: 5;
+.header.scroll svg {
+  color: var(--color-dark);
+}
+@media (any-hover: hover) {
+  .header.scroll svg:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+@media (any-hover: none) {
+  .header.scroll svg:active {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+.header.scroll .burger-button span {
+  background-color: var(--color-dark);
+}
+.header.scroll .burger-button span::after, .header.scroll .burger-button span::before {
+  background-color: var(--color-dark);
+}
+.header__logo-link svg {
+  color: var(--color-light);
+}
+@media (any-hover: hover) {
+  .header__logo-link svg:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+@media (any-hover: none) {
+  .header__logo-link svg:active {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 @media (width <= 47.99875rem) {
   .header__logo-link svg {
@@ -428,65 +471,7 @@ a[class] {
   }
 }
 .header__inner {
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  width: 100%;
   padding-block: 0.625rem;
-  transition: background-color 0.3s, box-shadow 0.3s;
-}
-.header__inner:not(:has(.scroll)) svg .cls-1 {
-  color: #fff;
-}
-.header__inner:not(:has(.scroll)) svg .cls-2 {
-  color: var(--color-red);
-}
-@media (any-hover: hover) {
-  .header__inner:not(:has(.scroll)) svg:hover .cls-1 {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  .header__inner:not(:has(.scroll)) svg:hover:not(:has(.scroll)).cls-2 {
-    color: #fff;
-  }
-}
-@media (any-hover: none) {
-  .header__inner:not(:has(.scroll)) svg:active .cls-1 {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  .header__inner:not(:has(.scroll)) svg:active:not(:has(.scroll)).cls-2 {
-    color: #fff;
-  }
-}
-.header__inner.scroll svg .cls-1 {
-  color: var(--color-dark);
-}
-@media (any-hover: hover) {
-  .header__inner.scroll svg:hover .cls-1 {
-    color: rgba(0, 0, 0, 0.5);
-  }
-}
-@media (any-hover: none) {
-  .header__inner.scroll svg:active .cls-1 {
-    color: rgba(0, 0, 0, 0.5);
-  }
-}
-@media (any-hover: hover) {
-  .header__inner.scroll .burger-button:hover {
-    border: 0.0625rem solid var(--color-dark);
-    border-radius: 0.625rem;
-  }
-}
-@media (any-hover: none) {
-  .header__inner.scroll .burger-button:active {
-    border: 0.0625rem solid var(--color-dark);
-    border-radius: 0.625rem;
-  }
-}
-.header__inner.scroll .burger-button span {
-  background-color: var(--color-dark);
-}
-.header__inner.scroll .burger-button span::after, .header__inner.scroll .burger-button span::before {
-  background-color: var(--color-dark);
 }
 .header__body {
   display: flex;
@@ -495,6 +480,7 @@ a[class] {
 }
 .header__navigation-list {
   display: flex;
+  column-gap: 0.625rem;
 }
 .header__navigation-link {
   height: 3rem;
@@ -909,4 +895,53 @@ a[class] {
   height: auto;
   box-shadow: 20px 20px 0px 0px #d6d3d3;
   border-radius: 1.25rem;
+}
+
+.products-hero {
+  color: var(--color-dark);
+  margin-top: var(--header-height);
+}
+.products-hero__title {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+.products-hero__items {
+  --rows: 3;
+  display: grid;
+  grid-template-columns: repeat(var(--rows), 1fr);
+  gap: 1.25rem;
+}
+@media (width <= 63.99875rem) {
+  .products-hero__items {
+    --rows: 2;
+  }
+}
+@media (width <= 47.99875rem) {
+  .products-hero__items {
+    --rows: 1;
+  }
+}
+.products-hero__card {
+  box-shadow: 3px 3px 12px 0px rgb(66, 68, 90);
+  border-radius: 0.625rem;
+  padding: 0.625rem;
+  overflow: hidden;
+  text-align: center;
+}
+.products-hero__card-img {
+  padding: 0.9375rem;
+  margin-bottom: 1.5625rem;
+}
+@media (any-hover: hover) {
+  .products-hero__card-img:hover {
+    scale: 1.2;
+  }
+}
+@media (any-hover: none) {
+  .products-hero__card-img:active {
+    scale: 1.2;
+  }
+}
+.products-hero__card-link {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
