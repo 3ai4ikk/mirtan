@@ -4,14 +4,33 @@
   &__inner {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: rem(40);
+
+    @include tablet {
+      row-gap: rem(20);
+    }
 
     iframe {
-      box-shadow: 3px 3px 12px 0px rgb(66, 68, 90);
+      max-width: rem(600);
+      height: auto;
+      aspect-ratio: 1;
+      box-shadow: 20px 20px 0px 0px #d6d3d3;
+      border-radius: rem(20);
+
+      @include mobile {
+        border-radius: 0;
+        box-shadow: 4px 4px 12px 0px rgb(66, 68, 90);
+      }
     }
   }
 
   &__body {
     color: var(--color-dark);
+
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &__title {
@@ -29,6 +48,8 @@
   &__image {
     max-width: rem(400);
     height: auto;
-    box-shadow: 3px 3px 12px 0px rgb(66, 68, 90);
+    box-shadow: 20px 20px 0px 0px #d6d3d3;
+    border-radius: rem(20);
+    //rgb(66, 68, 90)
   }
 }

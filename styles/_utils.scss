@@ -31,3 +31,9 @@
     display: none !important;
   }
 }
+
+.hidden-tablet {
+  @include tablet {
+    display: none !important;
+  }
+}
