@@ -23,7 +23,7 @@
     }
     &-link {
       @include hover {
-        color: rgba($color: #ffffff, $alpha: 0.5);
+        color: rgba($color: #ffffff, $alpha: 0.6);
       }
     }
   }
@@ -41,6 +41,9 @@
       display: flex;
       align-items: center;
       column-gap: rem(5);
+
+      transition-duration: var(--transition-duration);
+
       &::before {
         @include square(rem(8));
         content: "";
@@ -66,13 +69,6 @@
         align-items: center;
         column-gap: rem(5);
       }
-    }
-  }
-
-  &__form {
-    &-body {
-      display: flex;
-      flex-direction: column;
     }
   }
 }

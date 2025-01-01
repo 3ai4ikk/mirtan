@@ -771,12 +771,12 @@ a[class] {
 }
 @media (any-hover: hover) {
   .footer__logo-link:hover {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.6);
   }
 }
 @media (any-hover: none) {
   .footer__logo-link:active {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.6);
   }
 }
 .footer__title {
@@ -789,6 +789,7 @@ a[class] {
   display: flex;
   align-items: center;
   column-gap: 0.3125rem;
+  transition-duration: var(--transition-duration);
 }
 .footer__products-item::before {
   width: 0.5rem;
@@ -817,10 +818,6 @@ a[class] {
   display: flex;
   align-items: center;
   column-gap: 0.3125rem;
-}
-.footer__form-body {
-  display: flex;
-  flex-direction: column;
 }
 
 .form {
