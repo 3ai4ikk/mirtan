@@ -343,6 +343,7 @@ a[class] {
 
 .hero {
   height: 100vh;
+  --darkBg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background: url(../images/bg-1.jpg) center/cover no-repeat;
   animation: animation-swap 15s infinite;
   position: relative;
@@ -356,10 +357,9 @@ a[class] {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.hero__main {
-  position: relative;
-}
 .hero__body {
+  position: relative;
+  z-index: 1;
   padding-top: 15.625rem;
   width: 100%;
   max-width: 37.5rem;
