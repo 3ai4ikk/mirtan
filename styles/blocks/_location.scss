@@ -4,6 +4,10 @@
   &__inner {
     display: flex;
     justify-content: space-around;
+
+    iframe {
+      box-shadow: 3px 3px 12px 0px rgb(66, 68, 90);
+    }
   }
 
   &__body {
@@ -25,5 +29,6 @@
   &__image {
     max-width: rem(400);
     height: auto;
+    box-shadow: 3px 3px 12px 0px rgb(66, 68, 90);
   }
 }

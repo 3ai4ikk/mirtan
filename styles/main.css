@@ -859,6 +859,9 @@ a[class] {
   display: flex;
   justify-content: space-around;
 }
+.location__inner iframe {
+  box-shadow: 3px 3px 12px 0px rgb(66, 68, 90);
+}
 .location__body {
   color: var(--color-dark);
 }
@@ -875,4 +878,5 @@ a[class] {
 .location__image {
   max-width: 25rem;
   height: auto;
+  box-shadow: 3px 3px 12px 0px rgb(66, 68, 90);
 }/*# sourceMappingURL=main.css.map */
