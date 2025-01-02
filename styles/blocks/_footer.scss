@@ -1,7 +1,7 @@
 @use "../helpers" as *;
 
 .footer {
-  background-color: var(--color-dark-red);
+  background-color: rgb(69, 62, 57);
 
   &__inner {
     @include fluid-text(16, 14);

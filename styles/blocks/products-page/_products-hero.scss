@@ -7,7 +7,11 @@
   &__title {
     text-align: center;
     margin-bottom: rem(30);
+    color: rgb(75, 69, 64);
   }
+
+  //Ova mahallesi 44346 sokak No. 2/5 Seyhan Adana Turkiye
+  // +90 541 712 10 77
 
   &__items {
     --rows: 3;
@@ -33,6 +37,8 @@
     align-items: center;
 
     padding: rem(10);
+
+    color: rgb(69, 62, 57);
 
     overflow: hidden;
     text-align: center;
