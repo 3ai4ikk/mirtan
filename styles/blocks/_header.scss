@@ -16,9 +16,14 @@
   &--bg-dark-red {
     background-color: var(--color-dark-red);
     color: var(--color-light);
+
+    transition-duration: var(--transition-duration);
+    &.scroll {
+      box-shadow: 0px 4px 12px 0px rgba(66, 68, 90, 0.5);
+    }
   }
 
-  &.scroll {
+  &.scroll:not(.header--bg-dark-red) {
     background-color: var(--color-light);
     box-shadow: 0px 4px 12px 0px rgba(66, 68, 90, 0.5);
     color: var(--color-dark);

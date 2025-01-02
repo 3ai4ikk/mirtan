@@ -427,29 +427,33 @@ a[class] {
 .header--bg-dark-red {
   background-color: var(--color-dark-red);
   color: var(--color-light);
+  transition-duration: var(--transition-duration);
 }
-.header.scroll {
+.header--bg-dark-red.scroll {
+  box-shadow: 0px 4px 12px 0px rgba(66, 68, 90, 0.5);
+}
+.header.scroll:not(.header--bg-dark-red) {
   background-color: var(--color-light);
   box-shadow: 0px 4px 12px 0px rgba(66, 68, 90, 0.5);
   color: var(--color-dark);
 }
-.header.scroll svg {
+.header.scroll:not(.header--bg-dark-red) svg {
   color: var(--color-dark);
 }
 @media (any-hover: hover) {
-  .header.scroll svg:hover {
+  .header.scroll:not(.header--bg-dark-red) svg:hover {
     color: rgba(0, 0, 0, 0.6);
   }
 }
 @media (any-hover: none) {
-  .header.scroll svg:active {
+  .header.scroll:not(.header--bg-dark-red) svg:active {
     color: rgba(0, 0, 0, 0.6);
   }
 }
-.header.scroll .burger-button span {
+.header.scroll:not(.header--bg-dark-red) .burger-button span {
   background-color: var(--color-dark);
 }
-.header.scroll .burger-button span::after, .header.scroll .burger-button span::before {
+.header.scroll:not(.header--bg-dark-red) .burger-button span::after, .header.scroll:not(.header--bg-dark-red) .burger-button span::before {
   background-color: var(--color-dark);
 }
 .header__logo-link svg {
