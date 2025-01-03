@@ -205,7 +205,7 @@ svg * {
   --color-light: #fff;
   --color-dark: #000;
   --color-red: #f80012;
-  --color-dark-red: #4d0909;
+  --color-light-brown: #453e39;
   --container-width: 80rem;
   --container-padding-x: 0.9375rem;
   --section-padding-y: 3.75rem;
@@ -429,7 +429,7 @@ a[class] {
   color: var(--color-light);
 }
 .header--bg-dark-red {
-  background-color: rgb(69, 62, 57);
+  background-color: var(--color-light-brown);
   color: var(--color-light);
   transition-duration: var(--transition-duration);
 }
@@ -754,7 +754,7 @@ a[class] {
 }
 
 .footer {
-  background-color: rgb(69, 62, 57);
+  background-color: var(--color-light-brown);
 }
 .footer__inner {
   font-size: clamp(0.875rem, 0.8260869565rem + 0.2173913043vw, 1rem);
@@ -909,7 +909,7 @@ a[class] {
 .products-hero__title {
   text-align: center;
   margin-bottom: 1.875rem;
-  color: rgb(75, 69, 64);
+  color: var(--color-light-brown);
 }
 .products-hero__items {
   --rows: 3;

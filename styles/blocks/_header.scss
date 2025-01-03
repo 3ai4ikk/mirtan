@@ -14,7 +14,7 @@
   }
 
   &--bg-dark-red {
-    background-color: rgb(69, 62, 57);
+    background-color: var(--color-light-brown);
     color: var(--color-light);
 
     transition-duration: var(--transition-duration);
