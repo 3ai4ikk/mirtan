@@ -948,6 +948,7 @@ a[class] {
   display: grid;
   grid-template-columns: repeat(var(--rows), 1fr);
   gap: 1.25rem;
+  margin-bottom: 1.875rem;
 }
 @media (width <= 63.99875rem) {
   .products-hero__items {
@@ -1218,6 +1219,4 @@ a[class] {
 }
 .about__title {
   text-align: center;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

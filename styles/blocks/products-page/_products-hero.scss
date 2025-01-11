@@ -10,16 +10,13 @@
     color: var(--color-light-brown);
   }
 
-  //Ova mahallesi 44346 sokak No. 2/5 Seyhan Adana Turkiye
-  // +90 541 712 10 77
-
-  // info@mirtantarim.com
-
   &__items {
     --rows: 3;
     display: grid;
     grid-template-columns: repeat(var(--rows), 1fr);
     gap: rem(20);
+
+    margin-bottom: rem(30);
 
     @include tablet {
       --rows: 2;
