@@ -67,10 +67,12 @@
                 >
               </li>
               <li class="header__navigation-item">
-                <a href="#" class="header__navigation-link">О нас</a>
+                <a href="./about.html" class="header__navigation-link">О нас</a>
               </li>
               <li class="header__navigation-item">
-                <a href="#" class="header__navigation-link">Контакты</a>
+                <a href="./contacts.html" class="header__navigation-link"
+                  >Контакты</a
+                >
               </li>
             </ul>
           </nav>
@@ -120,12 +122,18 @@
       <section class="hero">
         <div class="hero__inner container">
           <div class="hero__body">
-            <h1 class="hero__title">Lorem ipsum dolor</h1>
+            <h1 class="hero__title">
+              НАША МИССИЯ ЗАКЛЮЧАЕТСЯ В ТОМ, ЧТОБЫ ПОМОЧЬ НАШИМ КЛИЕНТАМ РАСТИ
+            </h1>
             <p class="hero__subtitle">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              sed minus blanditiis neque consequatur commodi illum dolore cumque
-              nisi tempore! Amet reprehenderit ab laudantium aliquam maiores
-              voluptas nihil doloremque dignissimos!
+              Наша компания производит комплектные вальцевые мельницы и
+              оборудование для переработки круп, пшеничной и
+              <span>гороховой</span> крупы, <span>овсяной</span> и
+              <span>кукурузной</span> крупы и зерновых хлопьев. А также
+              производство рисовой муки и муки из нута. Индивидуально под
+              заказчика мы разработаем и внедрим новые технологии, укомплектуем
+              модернизируем современным оборудованием предприятия по переработке
+              зерновых культур и комбикормов.
             </p>
           </div>
         </div>
@@ -134,11 +142,12 @@
         <div class="products__inner container">
           <div class="products__header">
             <h2 class="products__title">Lorem ipsum</h2>
-            <button
+            <a
+              href="./products.html"
               class="products__button button button--bg-red button--animation-up"
             >
               Весь список
-            </button>
+            </a>
           </div>
           <div class="products__body">
             <div class="products__list">
@@ -148,7 +157,7 @@
                   alt=""
                   class="products__card-img"
                 />
-                <a href="#" class="products__card-link">
+                <a href="./products/breakout.html" class="products__card-link">
                   <div class="products__card-body">
                     <h3 class="products__card-title">Выбой</h3>
                     <div class="products__card-text">
@@ -172,7 +181,10 @@
                   alt=""
                   class="products__card-img"
                 />
-                <a href="#" class="products__card-link">
+                <a
+                  href="./products/beading-machine.html"
+                  class="products__card-link"
+                >
                   <div class="products__card-body">
                     <h3 class="products__card-title">Вымольная машина</h3>
                     <div class="products__card-text">
@@ -195,9 +207,12 @@
                   alt=""
                   class="products__card-img"
                 />
-                <a href="#" class="products__card-link">
+                <a
+                  href="./products/milstone-mill.html"
+                  class="products__card-link"
+                >
                   <div class="products__card-body">
-                    <h3 class="products__card-title">Мельницы MIR</h3>
+                    <h3 class="products__card-title">Жерновая мельница</h3>
                     <div class="products__card-text">
                       <p>
                         Агрегатные мельницы MIR представляют собой универсальные
@@ -325,18 +340,32 @@
       <section class="location section">
         <div class="location__inner container">
           <div class="location__body">
-            <h3 class="location__title">Где мы находимся?</h3>
+            <h3 class="location__title">Свяжитесь с нами!</h3>
             <div class="location__info">
-              <address>
-                Ova mahallesi 44346 sokak No. 2/5 Seyhan Adana Turkiye
+              <address class="location__info-address">
+                Ova mahallesi 44346 sokak. <br />
+                No. 2/5 Seyhan Adana Turkiye
               </address>
-              <img
-                src="./images/location/1.jpg"
-                alt=""
-                class="location__image hidden-tablet"
-                width="400"
-                loading="lazy"
-              />
+              <div class="location__info-tel">
+                <div>
+                  <a class="location__info-tel-link" href="tel:+905417121077"
+                    >+90 541-712-10-77</a
+                  >
+                  <a
+                    class="location__info-tel-link"
+                    href="tel:+905525284533
+                "
+                    >+90 552-528-45-33
+                  </a>
+                </div>
+              </div>
+              <div class="location__info-email">
+                <a
+                  href="mailto:info@mirtantarim.com"
+                  class="location__info-email-link"
+                  >info@mirtantarim.com</a
+                >
+              </div>
             </div>
           </div>
           <iframe

@@ -8,6 +8,10 @@
 
   text-wrap: nowrap;
 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
   transition-duration: var(--transition-duration);
 
   &--animation {

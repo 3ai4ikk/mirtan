@@ -1,0 +1,13 @@
+@use "../../helpers" as *;
+
+.about {
+  color: var(--color-light-brown);
+
+  &__inner {
+    padding-top: rem(100);
+  }
+
+  &__title {
+    text-align: center;
+  }
+}

@@ -1,0 +1,22 @@
+@use "../../helpers" as *;
+
+.table {
+  text-align: left;
+
+  border-collapse: collapse;
+
+  th,
+  td {
+    border: 1px solid var(--color-light-brown);
+  }
+
+  th {
+    padding-right: rem(20);
+    font-weight: 400;
+  }
+
+  td {
+    text-align: center;
+    font-weight: 700;
+  }
+}

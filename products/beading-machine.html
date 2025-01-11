@@ -2,19 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mirtan | Услуги</title>
-    <link rel="stylesheet" href="styles/main.css" />
-    <script src="./scripts/Header-start.js" type="module" defer></script>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../scripts/libs/splide.min.css" />
+
+    <script src="../scripts/Header-start.js" type="module" defer></script>
+    <script src="../scripts/libs/splide.min.js" defer></script>
+    <script src="../scripts/products-slider.js" type="module" defer></script>
   </head>
   <body>
     <header class="header header--bg-light-brown" data-js-header>
       <div class="header__inner">
         <div class="header__body container">
-          <a href="./index.html" class="header__logo-link">
+          <a href="../index.html" class="header__logo-link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="200"
@@ -54,24 +55,22 @@
           <nav class="header__navigation hidden-mobile">
             <ul class="header__navigation-list">
               <li class="header__navigation-item">
-                <a href="./index.html" class="header__navigation-link"
+                <a href="../index.html" class="header__navigation-link"
                   >Главная</a
                 >
               </li>
               <li class="header__navigation-item">
                 <a
-                  href="./products.html"
+                  href="../products.html"
                   class="header__navigation-link is-active"
                   >Услуги</a
                 >
               </li>
               <li class="header__navigation-item">
-                <a href="./about.html" class="header__navigation-link">О нас</a>
+                <a href="#" class="header__navigation-link">О нас</a>
               </li>
               <li class="header__navigation-item">
-                <a href="./contacts.html" class="header__navigation-link"
-                  >Контакты</a
-                >
+                <a href="#" class="header__navigation-link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -87,7 +86,7 @@
             ><span></span
           ></a>
           <img
-            src="./icons/mirtan.svg"
+            src="../icons/mirtan.svg"
             alt=""
             class="header__overlay-logo"
             width="130"
@@ -120,181 +119,151 @@
       </div>
     </header>
     <main>
-      <section class="products-hero section">
-        <div class="products-hero__inner container">
-          <h1 class="products-hero__title">Наши товары</h1>
-          <div class="products-hero__items">
-            <div class="products-hero__card">
-              <a
-                href="./products/breakout.html"
-                class="products-hero__card-link"
-                ><img
-                  src="./images/products/1.jpg"
-                  alt=""
-                  class="products-hero__card-img"
-                  width="400"
-                  height="267"
-                  loading="lazy"
-                />
-                <p class="products-hero__card-title h4">Выбой</p>
-              </a>
+      <section class="product-hero section">
+        <div class="product-hero__inner container">
+          <div class="product-hero__main">
+            <div class="product-hero__body">
+              <h1 class="product-hero__title">Вымольная машина</h1>
+              <p class="product-hero__text">
+                Вымольная машина предназначена для отделения частиц ядра от
+                оболочек при производстве муки
+              </p>
+              <div class="product-hero__table">
+                <table class="table">
+                  <tr>
+                    <th>Производительность, т/час, не менее</th>
+                    <td>0,3-0,55</td>
+                  </tr>
+                  <tr>
+                    <th>Зазор между ротором и поверхностью сита, мм</th>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <th>Площадь сит, м²</th>
+                    <td>0,36</td>
+                  </tr>
+                  <tr>
+                    <th>Частота вращения бичевого ротора, об/мин</th>
+                    <td>620</td>
+                  </tr>
+                  <tr>
+                    <th>Мощность электродвигателя, кВт</th>
+                    <td>1,1</td>
+                  </tr>
+                  <tr>
+                    <th>Частота вращения электродвигателя, об/мин</th>
+                    <td>940</td>
+                  </tr>
+                  <tr>
+                    <th>Срок службы, лет</th>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <th>Масса, кг, не более</th>
+                    <td>110</td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">
+                      Габаритные размеры, мм, не более
+                      <tr>
+                        <th>Длина</th>
+                        <td>1110</td>
+                      </tr>
+                      <tr>
+                        <th>Ширина</th>
+                        <td>475</td>
+                      </tr>
+                      <tr>
+                        <th>Высота</th>
+                        <td>1030</td>
+                      </tr>
+                    </th>
+                  </tr>
+                </table>
+              </div>
             </div>
-            <div class="products-hero__card">
-              <a
-                href="./products/beading-machine.html"
-                class="products-hero__card-link"
-                ><img
-                  src="./images/products/2.jpg"
-                  alt=""
-                  class="products-hero__card-img"
-                  width="400"
-                  height="267"
-                  loading="lazy"
-                />
-                <p class="products-hero__card-title h4">Вымольная машина</p>
-              </a>
-            </div>
-            <div class="products-hero__card">
-              <a
-                href="./products/milstone-mill.html"
-                class="products-hero__card-link"
-              >
-                <img
-                  src="./images/products/3.jpg"
-                  alt=""
-                  class="products-hero__card-img"
-                  width="400"
-                  height="267"
-                  loading="lazy"
-                />
-                <p class="products-hero__card-title h4">Жерновая мельница</p>
-              </a>
-            </div>
-            <div class="products-hero__card">
-              <a href="#" class="products-hero__card-link">
-                <img
-                  src="./images/products/4.jpg"
-                  alt=""
-                  class="products-hero__card-img"
-                  width="400"
-                  height="267"
-                  loading="lazy"
-                />
-                <p class="products-hero__card-title h4">Зерновой сепаратор</p>
-              </a>
-            </div>
-            <div class="products-hero__card">
-              <a href="#" class="products-hero__card-link">
-                <img
-                  src="./images/products/5.jpg"
-                  alt=""
-                  class="products-hero__card-img"
-                  width="400"
-                  height="267"
-                  loading="lazy"
-                />
-                <p class="products-hero__card-title h4">Камнеотборник</p>
-              </a>
-            </div>
-            <div class="products-hero__card">
-              <a href="#" class="products-hero__card-link">
-                <img
-                  src="./images/products/6.jpg"
-                  alt=""
-                  class="products-hero__card-img"
-                  width="400"
-                  height="267"
-                  loading="lazy"
-                />
-                <p class="products-hero__card-title h4">Мельница</p>
-              </a>
-            </div>
-            <div class="products-hero__card">
-              <a href="#" class="products-hero__card-link"
-                ><img
-                  src="./images/products/7.jpg"
-                  alt=""
-                  class="products-hero__card-img"
-                  width="400"
-                  height="267"
-                  loading="lazy"
-                />
-                <p class="products-hero__card-title h4">Обойка</p>
-              </a>
-            </div>
-            <div class="products-hero__card">
-              <a href="#" class="products-hero__card-link"
-                ><img
-                  src="./images/products/8.jpg"
-                  alt=""
-                  class="products-hero__card-img"
-                  width="400"
-                  height="267"
-                  loading="lazy"
-                />
-                <p class="products-hero__card-title h4">
-                  Пневматический сепаратор
-                </p>
-              </a>
-            </div>
-            <div class="products-hero__card">
-              <a href="#" class="products-hero__card-link">
-                <img
-                  src="./images/products/9.jpg"
-                  alt=""
-                  class="products-hero__card-img"
-                  width="400"
-                  height="267"
-                  loading="lazy"
-                />
-                <p class="products-hero__card-title h4">Рассев</p>
-              </a>
-            </div>
-            <div class="products-hero__card">
-              <a href="#" class="products-hero__card-link">
-                <img
-                  src="./images/products/10.jpg"
-                  alt=""
-                  class="products-hero__card-img"
-                  width="400"
-                  height="267"
-                  loading="lazy"
-                />
-                <p class="products-hero__card-title h4">Ситовейка</p>
-              </a>
-            </div>
-            <div class="products-hero__card">
-              <a href="#" class="products-hero__card-link">
-                <img
-                  src="./images/products/11.jpg"
-                  alt=""
-                  class="products-hero__card-img"
-                  width="400"
-                  height="267"
-                  loading="lazy"
-                />
-                <p class="products-hero__card-title h4">Станок</p>
-              </a>
-            </div>
-            <div class="products-hero__card">
-              <a href="#" class="products-hero__card-link">
-                <img
-                  src="./images/products/12.jpg"
-                  alt=""
-                  class="products-hero__card-img"
-                  width="400"
-                  height="267"
-                  loading="lazy"
-                />
-                <p class="products-hero__card-title h4">
-                  Щеточно-обоечная машина
-                </p>
-              </a>
+            <!-- Slider -->
+            <section class="product-hero__slider splide" data-js-slider>
+              <ul class="splide__pagination"></ul>
+              <div class="product-hero__slide-wrapper splide__track">
+                <ul class="product-hero__slide-list splide__list">
+                  <li class="product-hero__slide-card splide__slide">
+                    <img
+                      src="../images/products/beading-machine/1.jpg"
+                      alt=""
+                      class="product-hero__slide-img"
+                    />
+                  </li>
+                  <li class="product-hero__slide-card splide__slide">
+                    <img
+                      src="../images/products/beading-machine/2.jpg"
+                      alt=""
+                      class="product-hero__slide-img"
+                    />
+                  </li>
+                  <li class="product-hero__slide-card splide__slide">
+                    <img
+                      src="../images/products/beading-machine/3.jpg"
+                      alt=""
+                      class="product-hero__slide-img"
+                    />
+                  </li>
+                  <li class="product-hero__slide-card splide__slide">
+                    <img
+                      src="../images/products/beading-machine/4.jpg"
+                      alt=""
+                      class="product-hero__slide-img"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <hr />
+          <div class="product-hero__info">
+            <h3 class="product-hero__info-title">Дополнительная информация</h3>
+            <div class="product-hero__info-text">
+              <p>
+                Машина состоит из следующих основных узлов: корпуса, корпуса
+                выпускного, ротора бичевого, ситового полуцилиндра, воронки,
+                клиноременной передачи, привода , ограждения .
+              </p>
+              <p>
+                Корпус, сваренный из листового металла, является основой для
+                крепления всех узлов обоечной машины.
+              </p>
+              <p>
+                Бичевой ротор состоит из вала, с установленными на него бичами.
+                Вал закреплен в самоустанавливающихся подшипниках. На консольной
+                части вала установлен приводной шкив.
+              </p>
+              <p>
+                Ситовой полуцилиндр состоит из деревянного каркаса и
+                закреплённой к нему сетки.
+              </p>
+              <p>
+                Привод ротора осуществляется от электродвигателя через
+                клиноременную передачу.
+              </p>
+              <p>
+                Технологический процесс в машине осуществляется следующим
+                образом.
+              </p>
+              <p>
+                Продукт через приемный патрубок поступает в рабочую зону между
+                ротором и ситовым полуцилиндром, затем продвигается гонками в
+                осевом направлении, подвергаясь многочисленным ударам и трению.
+                При этом частицы эндосперма отделяются от отрубей, проходят
+                через отверстия в сите и выходят через выпускной конус из
+                машины. Более крупные отруби выводятся сходом ситового
+                полуцилиндра.
+              </p>
             </div>
           </div>
         </div>
       </section>
     </main>
+
     <footer class="footer section">
       <div class="footer__inner container">
         <div class="footer__logo">
@@ -341,7 +310,9 @@
           <div class="footer__products-body">
             <ul class="footer__products-list">
               <li class="footer__products-item">
-                <a href="#" class="footer__products-link">Выбой</a>
+                <a href="./breakout.html" class="footer__products-link"
+                  >Выбой</a
+                >
               </li>
               <li class="footer__products-item">
                 <a href="#" class="footer__products-link">Вымольная машина</a>
@@ -389,7 +360,7 @@
             <div class="footer__contacts-adress">
               <img
                 class="footer__contacts-img"
-                src="./icons/footer/contacts/1.svg"
+                src="../icons/footer/contacts/1.svg"
                 alt=""
                 width="32"
                 height="32"
@@ -403,7 +374,7 @@
             <div class="footer__contacts-tel">
               <img
                 class="footer__contacts-img"
-                src="./icons/footer/contacts/2.svg"
+                src="../icons/footer/contacts/2.svg"
                 alt=""
                 width="32"
                 height="32"
@@ -416,7 +387,7 @@
             <div class="footer__contacts-email">
               <img
                 class="footer__contacts-img"
-                src="./icons/footer/contacts/3.svg"
+                src="../icons/footer/contacts/3.svg"
                 alt=""
                 width="32"
                 height="32"
