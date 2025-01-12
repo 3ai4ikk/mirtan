@@ -12,6 +12,13 @@ body {
   @include fluid-text(18, 14);
   font-family: var(--font-family-base);
   color: var(--color-light);
+
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }
 
 h1,
