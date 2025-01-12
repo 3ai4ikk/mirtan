@@ -468,6 +468,9 @@ a[class] {
 .header.scroll:not(.header--bg-light-brown) .burger-button span::after, .header.scroll:not(.header--bg-light-brown) .burger-button span::before {
   background-color: var(--color-dark);
 }
+.header__logo-link {
+  width: clamp(7.5rem, 5.5434782609rem + 8.6956521739vw, 12.5rem);
+}
 .header__logo-link svg {
   color: var(--color-light);
 }
@@ -479,11 +482,6 @@ a[class] {
 @media (any-hover: none) {
   .header__logo-link svg:active {
     color: rgba(255, 255, 255, 0.6);
-  }
-}
-@media (width <= 47.99875rem) {
-  .header__logo-link svg {
-    width: 7.5rem;
   }
 }
 .header__inner {
