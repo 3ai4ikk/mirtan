@@ -21,6 +21,7 @@ class Header {
       this.selectors.closeBurgerButton
     );
     this.bindEvents();
+    this.onScroll();
   }
 
   onBurgerButton = (event) => {

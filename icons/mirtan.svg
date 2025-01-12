@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2628" height="671" viewBox="0 0 2628 671">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 2628 671">
   <defs>
     <style>
       .cls-1 {
         font-size: 200px;
         font-family: "Minion Variable Concept";
         font-weight: 700;
-        fill=currentColor
+        fill: currentColor;
       }
 
       .cls-2 {
